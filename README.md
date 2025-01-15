@@ -1,5 +1,7 @@
 # MultiSensorPi3
 
+git clone https://github.com/momorara/test_MS sensorHAT<br>
+
 <h4><<概要>></h4>
 　ラズパイを手に入れて、Ｌチカとかやってみたけれど、さて次は何をしようと悩んでいたら、センサーをやってみましょう。<br>
 　部品から揃えてやるのもいいですが、サクッと初めてpythonやnode-redをやりたいならこの基板が良いです。<br>
