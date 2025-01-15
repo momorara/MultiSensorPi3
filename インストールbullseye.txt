@@ -1,97 +1,52 @@
-ƒCƒ“ƒXƒg[ƒ‹ v0.4
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ« v1.0
 
-2024/8/27
-bullseye 11.1,11.2,11.6,11.7,11.8,11.10
-Buster 10.10
-Buster 10.9
-2024/10/15
+2025/01/15
 bullseye 11.11
 
-ƒVƒXƒeƒ€‚ğƒCƒ“ƒXƒg[ƒ‹
+ã‚·ã‚¹ãƒ†ãƒ ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
-ƒŠƒ|ƒWƒgƒŠ‚ÌsensorHAT3‚ğƒ_ƒEƒ“ƒ[ƒh
+ãƒªãƒã‚¸ãƒˆãƒªã®sensorHAT3ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰
 git clone https://github.com/momorara/MultiSensorPi3 sensorHAT
+ãƒ†ã‚¹ãƒˆç”¨
+git clone https://github.com/momorara/test sensorHAT
 
-i2c‚ğg—p‚Å‚«‚é‚æ‚¤‚É‚·‚éB
-sudo raspi-config“™‚ÅAİ’è
+i2cã‚’ä½¿ç”¨ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã€‚
+sudo raspi-configç­‰ã§ã€è¨­å®š
 
->>i2cƒfƒoƒCƒX‚Æ‚µ‚Ä”F¯‚³‚ê‚Ä‚¢‚é‚©Šm”F
+>>i2cãƒ‡ãƒã‚¤ã‚¹ã¨ã—ã¦èªè­˜ã•ã‚Œã¦ã„ã‚‹ã‹ç¢ºèª
 i2cdetect -y 1
-‚Æ‚µ‚ÄA
-AHT10:38 BMP180:77 BMP280:76‚ª ‚ ‚ê‚Îƒn[ƒhƒEƒFƒA‚Ì”F¯‚Æ‚µ‚Ä‚n‚j
-BMP‚Í‚Ç‚¿‚ç‚©ˆê•û‚ª•t‚¢‚Ä‚¢‚Ü‚·
-*AHT10‚É‚Â‚¢‚Ä‚ÍA‡ŸAHT20,AHT30‚É’u‚«Š·‚í‚é—\’è‚Å‚·B
+ã¨ã—ã¦ã€
+AHT30:38 BMP280:76ãŒ ã‚ã‚Œã°ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã®èªè­˜ã¨ã—ã¦ï¼¯ï¼«
 
-ƒCƒ“ƒXƒg[ƒ‹‚à•t‚¢‚Ä‚¢‚é•û‚Ì‚İ‚ÅOK‚Å‚·B
-
-
->>BMP280ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹(2023/9ˆÈ~)
-sudo pip3 install bmp280
-git clone https://github.com/pimoroni/bmp280-python
-cd bmp280-python/examples/
-sudo python3 temperature-and-pressure.py 
-(—á)
-temperature-and-pressure.py - Displays the temperature and pressure.
-Press Ctrl+C to exit!
-29.58*C 1005.60hPa
-29.57*C 1005.60hPa
-....
-
->>BMP180ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹(BMP180‚ğg—p‚·‚éê‡)
-git clone https://github.com/adafruit/Adafruit_Python_BMP.git
-cd Adafruit_Python_BMP
-sudo python3 setup.py install
-cd examples/
-python3 simpletest.py
->>¬Œ÷‚µ‚Ä‚¢‚ê‚ÎA‹Cˆ³‚ª•\¦‚³‚ê‚éB
-(—á)
-Temp = 25.20 *C
-Pressure = 102113.00 Pa
-Altitude = -64.74 m
-Sealevel Pressure = 102096.00 Pa
-
-
->>AHT10,AHT20,AHT30ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹
+***node-redã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 cd
-pip3 install adafruit-circuitpython-ahtx0
-cd sensorHAT
-python3 AHTx0_dataSave03.py
-‚Æ‚µ‚ÄA‰·“x‚Æ¼“x‚ª•\¦‚³‚ê‚ê‚Î‚n‚j
-(—á)
-‘ª’è’lTemperature: 25.1 C   Humidity: 31.6 %
-•â³’l        ‰·“x: 0            ¼“x: 0
-•â³ŒãTemperature: 25.1 C   Humidity: 31.0 %
-
-
-***node-red‚ÌƒCƒ“ƒXƒg[ƒ‹
-cd
-‚Ü‚¸A
+ã¾ãšã€
 node-red-pi --max-old-space-size=256
-‚Æ‚µ‚ÄAnode-red‚ª‹N“®‚·‚é‚È‚çƒCƒ“ƒXƒgÏ‚È‚Ì‚ÅA
-Ÿ‚Ìs‚ÍƒXƒLƒbƒv‚µ‚Ä‚­‚¾‚³‚¢B
+ã¨ã—ã¦ã€node-redãŒèµ·å‹•ã™ã‚‹ãªã‚‰ã‚¤ãƒ³ã‚¹ãƒˆæ¸ˆãªã®ã§ã€
+æ¬¡ã®è¡Œã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¦ãã ã•ã„ã€‚
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
-E‰½‚©•·‚¢‚Ä‚­‚é‚¯‚ÇA2‰ñ‚Æ‚à y ‚Åi‚ß‚é
-E­‚µŠÔ‚ª‚©‚©‚è‚Ü‚·B
-EÅŒã‚ÉFX•·‚¢‚Ä‚­‚é‚¯‚ÇA‚»‚Ì‚Ü‚ÜƒGƒ“ƒ^[‚©No‚Å—Ç‚¢‚Æv‚¢‚Ü‚·B
-E‚“x‚Èg‚¢•û‚âƒZƒLƒ…ƒŠƒeƒB‚ğ‚‚ß‚½‚¢l‚Íyes‚¾‚Á‚½‚è‚µ‚Ü‚·‚ªA–{Šî”Â‚ğg‚¤ƒŒƒxƒ‹‚Å‚Í•s—v‚Æl‚¦‚Ü‚·B
+ãƒ»ä½•ã‹èã„ã¦ãã‚‹ã‘ã©ã€2å›ã¨ã‚‚ y ã§é€²ã‚ã‚‹
+ãƒ»å°‘ã—æ™‚é–“ãŒã‹ã‹ã‚Šã¾ã™ã€‚
+ãƒ»æœ€å¾Œã«è‰²ã€…èã„ã¦ãã‚‹ã‘ã©ã€ãã®ã¾ã¾ã‚¨ãƒ³ã‚¿ãƒ¼ã‹Noã§è‰¯ã„ã¨æ€ã„ã¾ã™ã€‚
+ãƒ»é«˜åº¦ãªä½¿ã„æ–¹ã‚„ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’é«˜ã‚ãŸã„äººã¯yesã ã£ãŸã‚Šã—ã¾ã™ãŒã€æœ¬åŸºæ¿ã‚’ä½¿ã†ãƒ¬ãƒ™ãƒ«ã§ã¯ä¸è¦ã¨è€ƒãˆã¾ã™ã€‚
 
-node-red-pi --max-old-space-size=256 ‚Æ‚µ‚Änode-red‚ğ—§‚¿ã‚°‚ÄA
-ƒuƒ‰ƒEƒU‚Åuhttp://ipƒAƒhƒŒƒX:1880/v‚Æ‚µ‚Änode-red‚Ì•ÒW‰æ–Ê‚ğŠJ‚«‚Ü‚·B
-‚»‚±‚ÅAƒpƒŒƒbƒg‚ÌŠÇ—‚ÅŸ‚Ì2‚Â‚Ìƒm[ƒh‚ğ’Ç‰Á‚µ‚Ä‚­‚¾‚³‚¢B
-node-red-dashboard	UI—p‚Ìƒtƒ[
-node-red-contrib-calc	ŒvZ—p‚Ìƒtƒ[
-‚ğƒpƒŒƒbƒg‚ÌŠÇ—‚Å’Ç‰Á‚·‚éB
+node-red-pi --max-old-space-size=256 ã¨ã—ã¦node-redã‚’ç«‹ã¡ä¸Šã’ã¦ã€
+ãƒ–ãƒ©ã‚¦ã‚¶ã§ã€Œhttp://ipã‚¢ãƒ‰ãƒ¬ã‚¹:1880/ã€ã¨ã—ã¦node-redã®ç·¨é›†ç”»é¢ã‚’é–‹ãã¾ã™ã€‚
+ãã“ã§ã€ãƒ‘ãƒ¬ãƒƒãƒˆã®ç®¡ç†ã§æ¬¡ã®2ã¤ã®ãƒãƒ¼ãƒ‰ã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚
+node-red-dashboard	UIç”¨ã®ãƒ•ãƒ­ãƒ¼
+node-red-contrib-calc	è¨ˆç®—ç”¨ã®ãƒ•ãƒ­ãƒ¼
+ã‚’ãƒ‘ãƒ¬ãƒƒãƒˆã®ç®¡ç†ã§è¿½åŠ ã™ã‚‹ã€‚
 
-***ƒZƒ“ƒT[ui—p‚Ìƒtƒ[‚ğ“Ç‚İ‚Ş
+***ã‚»ãƒ³ã‚µãƒ¼uiç”¨ã®ãƒ•ãƒ­ãƒ¼ã‚’èª­ã¿è¾¼ã‚€
 flows.json
 
-***cron‚Ìİ’è
-crontab - pi.txt‚Ì“à—e‚ğcrontab -e ‚ÅAƒRƒsƒy‚·‚éB
+***cronã®è¨­å®š
+crontab - pi.txtã®å†…å®¹ã‚’crontab -e ã§ã€ã‚³ãƒ”ãƒšã™ã‚‹ã€‚
 
 reboot
 
-ÔŠOüóM‚ª‚¤‚Ü‚­‚¢‚©‚È‚¢‚Æ‚«‚Í­‚µ‚¢‚¶‚Á‚ÄƒfƒvƒƒC‚µ‚Ä‚İ‚Ä‚­‚¾‚³‚¢B
+èµ¤å¤–ç·šå—ä¿¡ãŒã†ã¾ãã„ã‹ãªã„ã¨ãã¯å°‘ã—ã„ã˜ã£ã¦ãƒ‡ãƒ—ãƒ­ã‚¤ã—ã¦ã¿ã¦ãã ã•ã„ã€‚
 
 
 
