@@ -18,6 +18,9 @@ i2cdetect -y 1
 として、
 AHT30:38 BMP280:76が あればハードウェアの認識としてＯＫ
 
+# smbus2のインストール
+sudo pip3 install smbus2
+
 ***node-redのインストール
 cd
 まず、
