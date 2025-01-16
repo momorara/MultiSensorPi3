@@ -7,8 +7,6 @@ bullseye 11.11
 
 リポジトリのsensorHAT3をダウンロード
 git clone https://github.com/momorara/MultiSensorPi3 sensorHAT
-テスト用
-git clone https://github.com/momorara/test sensorHAT
 
 i2cを使用できるようにする。
 sudo raspi-config等で、設定
