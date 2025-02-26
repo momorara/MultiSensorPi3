@@ -27,6 +27,7 @@ git clone https://github.com/momorara/MultiSensorPi3 sensorHAT<br>
 <h4><<使用説明資料>></h4>
 説明書類の中の資料を確認ください。
 お問い合わせに関しては、サポート.txtを参照ください。><br>
+pythonだけで動作させたい場合は　https://github.com/momorara/MultiSensorPi3_V5　を参照ください。<br>
 
 <h4><<注意事項>></h4>
 センサーの取り付け方法 SR04とAHT30の接続方向を確実に確認してください。<br>
