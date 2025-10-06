@@ -1,5 +1,10 @@
 # MultiSensorPi3
 
+本プログラムはラズパイ4B以下でBullseye11.11までを対象としています。<br>
+bookworm以降のOS、ラズパイ5については<br>
+https://github.com/momorara/MultiSensorPi3_V5<br>
+を参照ください。
+
 <h4><<概要>></h4>
 　ラズパイを手に入れて、Ｌチカとかやってみたけれど、さて次は何をしようと悩んでいたら、センサーをやってみましょう。<br>
 　部品から揃えてやるのもいいですが、サクッと初めてpythonやnode-redをやりたいならこの基板が良いです。<br>
@@ -44,7 +49,7 @@ pythonだけで動作させたい場合は　https://github.com/momorara/MultiSe
 2024/10/15 bullseye 11.11 , Node-RED v4.0.5 , Node.js v20.18.0で動作確認しました。(on update)<br>
 2025/01/02 Pi5_bookwormでの使用では https://github.com/momorara/MultiSensorPi3_V5 を参照ください。<br>
 2025/01/16 bullseye 11.11 , Node-RED v4.0.8 , Node.js v20.18.1で動作確認、資料を整理しました。<br>
-2025/07/28 bookworm12.11,Node-RED v4.0.9 , Node.js v20.19.4で動作確認、ただし、LEDの点滅のみ動作しない。Pi5非対応<br>
+
  <br>
 <h4><<ライセンス>></h4>
 使用しているライブラリについては、ライブラリ制作者のライセンス規定を参照ください。
