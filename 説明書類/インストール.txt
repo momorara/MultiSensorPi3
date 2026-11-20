@@ -42,6 +42,10 @@ crontab - pi.txtの内容をcrontab -e で、コピペする。
 
 Trixieのみ
 pigpioを手動インストールする必要がありますので、「pigpioを手動インストール」を実行してください。
+また、pigpioをルート権限で起動する必要があるので
+sudo crontab -e で　
+@reboot sleep 10 && /usr/local/bin/pigpiod -t 0 -l
+を追加してください。
 
 
 再起動し、
