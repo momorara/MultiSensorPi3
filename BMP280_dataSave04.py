@@ -19,15 +19,64 @@ by.kawabata
 # 補正値
 hosei = 0
 
-# import lib_path
-# path = lib_path.get_path()
-# print(path)
-# cronの場合は指定が必要
-path = '/home/pi/sensorHAT/'
-
-
 import datetime
 import time
+
+# import i2c_BMP
+# # BMPセンサーの確認
+# BMPsesorName = i2c_BMP.BMP_sensor()
+# print(BMPsesorName)
+
+# if BMPsesorName == 'BMP180' :
+#     import Adafruit_BMP.BMP085 as BMP085
+#     try:
+#         sensor = BMP085.BMP085()
+#         press = ((sensor.read_pressure()+ 50)/ 100 )
+#     except:
+#         try:
+#             time.sleep(1)
+#             sensor = BMP085.BMP085()
+#             press = ((sensor.read_pressure()+ 50)/ 100 )
+#         except:
+#             try:
+#                 time.sleep(1.5)
+#                 sensor = BMP085.BMP085()
+#                 press = ((sensor.read_pressure()+ 50)/ 100 )
+#             except:
+#                 time.sleep(3)
+#                 sensor = BMP085.BMP085()
+#                 press = ((sensor.read_pressure()+ 50)/ 100 )
+
+# if BMPsesorName == 'BMP280' :
+#     from bmp280 import BMP280
+#     try:
+#         from smbus2 import SMBus
+#     except ImportError:
+#         from smbus import SMBus
+#     # Initialise the BMP280
+#     bus = SMBus(1)
+#     bmp280 = BMP280(i2c_dev=bus)
+#     # 計測
+#     try:
+#         press = bmp280.get_pressure()
+#     except:
+#         try:
+#             time.sleep(1)
+#             press = bmp280.get_pressure()
+#         except:
+#             try:
+#                 time.sleep(1.5)
+#                 press = bmp280.get_pressure()
+#             except:
+#                 time.sleep(3)
+#                 press = bmp280.get_pressure()
+#     # 初回だけ異常値が出る場合があるので、補正
+#     if press < 990:
+#         time.sleep(1)
+#         press = bmp280.get_pressure()
+#     # print('{:05.2f}hPa'.format(press))
+#     press = int(press * 100)/100
+
 
 from lib_BMP280 import BMP280
 bmp280 = BMP280()
@@ -52,7 +101,7 @@ print('Pressure = ',press,'hPa' )
 
 
 time.sleep(0.5)
-
+path = '/home/pi/sensorHAT/'
 dt_now = datetime.datetime.now()
 ################## press ###################
 # # 最新のデータを一つだけ入れたファイルを作る
