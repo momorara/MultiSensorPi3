@@ -28,16 +28,6 @@
         "info": ""
     },
     {
-        "id": "a757053b.5f7438",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "c396bec2.67068",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "c396bec2.67068",
         "type": "ui_tab",
         "name": "LED+SW",
@@ -144,60 +134,6 @@
         }
     },
     {
-        "id": "e5a3bdc8.169cc",
-        "type": "mqtt-broker",
-        "name": "Free Public MQTT 5 Broker Server",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "tls": "4ad98a91.f81c14",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "dfd49bd6.cc2368",
-        "type": "mqtt-broker",
-        "name": "Free Public MQTT 5 Broker Server",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "tls": "544a6b04.86de24",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "e7db4c84.3f1de",
-        "type": "ui_group",
-        "name": "状態表示",
-        "tab": "dc755b72.c0f8a8",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "4ad98a91.f81c14",
         "type": "tls-config",
         "name": "",
@@ -233,15 +169,6 @@
         "hidden": false
     },
     {
-        "id": "efe4dfaf.b734d",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "76e50a6c.781644",
-        "order": 1,
-        "disp": true,
-        "width": 6
-    },
-    {
         "id": "76e50a6c.781644",
         "type": "ui_tab",
         "name": "OLED表示",
@@ -259,28 +186,6 @@
         "disp": true,
         "width": "6",
         "collapse": false
-    },
-    {
-        "id": "724182e9.49bcdc",
-        "type": "mqtt-broker",
-        "name": "Free Public MQTT 5 Broker Server",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "tls": "2e3bc5cf.2d783a",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": false,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
     },
     {
         "id": "2e3bc5cf.2d783a",
@@ -344,16 +249,6 @@
         "collapse": false
     },
     {
-        "id": "66095ad.a851fa4",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "16e2d8b3.eadb37",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "16e2d8b3.eadb37",
         "type": "ui_tab",
         "name": "LED+SW",
@@ -370,16 +265,6 @@
         "order": 3,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "4230db4a.d49bc4",
-        "type": "ui_group",
-        "name": "センサー表示",
-        "tab": "2e6bdd3b.d62752",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false
     },
     {
         "id": "2e6bdd3b.d62752",
@@ -419,6 +304,121 @@
         "collapse": false
     },
     {
+        "id": "a757053b.5f7438",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "c396bec2.67068",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e5a3bdc8.169cc",
+        "type": "mqtt-broker",
+        "name": "Free Public MQTT 5 Broker Server",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "4ad98a91.f81c14",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "dfd49bd6.cc2368",
+        "type": "mqtt-broker",
+        "name": "Free Public MQTT 5 Broker Server",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "544a6b04.86de24",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e7db4c84.3f1de",
+        "type": "ui_group",
+        "name": "状態表示",
+        "tab": "dc755b72.c0f8a8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "efe4dfaf.b734d",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "76e50a6c.781644",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "724182e9.49bcdc",
+        "type": "mqtt-broker",
+        "name": "Free Public MQTT 5 Broker Server",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "tls": "2e3bc5cf.2d783a",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "66095ad.a851fa4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "16e2d8b3.eadb37",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4230db4a.d49bc4",
+        "type": "ui_group",
+        "name": "センサー表示",
+        "tab": "2e6bdd3b.d62752",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
         "id": "7210899a.896388",
         "type": "rpi-gpio in",
         "z": "74e34207.b386cc",
@@ -428,84 +428,11 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 200,
-        "y": 580,
+        "x": 220,
+        "y": 700,
         "wires": [
             [
                 "529b4e4d.29a7b"
-            ]
-        ]
-    },
-    {
-        "id": "cf4bee5b.ec02e",
-        "type": "rpi-gpio out",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "pin": "27",
-        "set": "",
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 900,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "c5f9cef1.7ff58",
-        "type": "inject",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 690,
-        "y": 160,
-        "wires": [
-            [
-                "cf4bee5b.ec02e"
-            ]
-        ]
-    },
-    {
-        "id": "36213c79.f01234",
-        "type": "inject",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 690,
-        "y": 200,
-        "wires": [
-            [
-                "cf4bee5b.ec02e"
             ]
         ]
     },
@@ -523,16 +450,17 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "0",
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
         "x": 200,
-        "y": 160,
+        "y": 140,
         "wires": [
             [
-                "8b4b3e00.36142"
+                "be68d298e4300afa"
             ]
         ]
     },
@@ -559,7 +487,7 @@
         "y": 200,
         "wires": [
             [
-                "8b4b3e00.36142"
+                "6d59827aa2146c71"
             ]
         ]
     },
@@ -588,8 +516,8 @@
         "officon": "",
         "offcolor": "",
         "animate": true,
-        "x": 720,
-        "y": 580,
+        "x": 740,
+        "y": 700,
         "wires": [
             []
         ]
@@ -616,8 +544,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 580,
+        "x": 370,
+        "y": 700,
         "wires": [
             [
                 "83d3686f.9a83a8"
@@ -646,8 +574,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 560,
+        "x": 540,
+        "y": 680,
         "wires": [
             [
                 "e6c75795.206f18"
@@ -673,108 +601,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 600,
+        "x": 540,
+        "y": 720,
         "wires": [
             [
                 "e6c75795.206f18"
-            ]
-        ]
-    },
-    {
-        "id": "8b4b3e00.36142",
-        "type": "delay",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "0.1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "outputs": 1,
-        "x": 450,
-        "y": 180,
-        "wires": [
-            [
-                "cf4bee5b.ec02e"
-            ]
-        ]
-    },
-    {
-        "id": "da53a74c.e675d8",
-        "type": "rpi-gpio out",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "pin": "17",
-        "set": "",
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 900,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "a0c08fe4.0fbb4",
-        "type": "inject",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 690,
-        "y": 260,
-        "wires": [
-            [
-                "da53a74c.e675d8"
-            ]
-        ]
-    },
-    {
-        "id": "2d942eae.e0e292",
-        "type": "inject",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 690,
-        "y": 300,
-        "wires": [
-            [
-                "da53a74c.e675d8"
             ]
         ]
     },
@@ -801,7 +632,7 @@
         "y": 260,
         "wires": [
             [
-                "360dd2c7.ee40ee"
+                "0b34c673913db4e0"
             ]
         ]
     },
@@ -819,89 +650,17 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "1",
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
         "x": 200,
-        "y": 300,
+        "y": 320,
         "wires": [
             [
-                "360dd2c7.ee40ee"
-            ]
-        ]
-    },
-    {
-        "id": "360dd2c7.ee40ee",
-        "type": "delay",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "0.1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "outputs": 1,
-        "x": 450,
-        "y": 280,
-        "wires": [
-            [
-                "da53a74c.e675d8"
-            ]
-        ]
-    },
-    {
-        "id": "99645177.0ec05",
-        "type": "inject",
-        "z": "74e34207.b386cc",
-        "name": "起動時",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 270,
-        "y": 100,
-        "wires": [
-            [
-                "567823f2.cd777c"
-            ]
-        ]
-    },
-    {
-        "id": "567823f2.cd777c",
-        "type": "template",
-        "z": "74e34207.b386cc",
-        "name": "初期値 off 設定",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "0",
-        "output": "str",
-        "x": 440,
-        "y": 120,
-        "wires": [
-            [
-                "8b4b3e00.36142",
-                "360dd2c7.ee40ee"
+                "512ac5c7d91359fd"
             ]
         ]
     },
@@ -915,8 +674,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 200,
-        "y": 660,
+        "x": 220,
+        "y": 780,
         "wires": [
             [
                 "dd53d7d5.9133d8"
@@ -948,8 +707,8 @@
         "officon": "",
         "offcolor": "",
         "animate": true,
-        "x": 720,
-        "y": 660,
+        "x": 740,
+        "y": 780,
         "wires": [
             []
         ]
@@ -976,8 +735,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 660,
+        "x": 370,
+        "y": 780,
         "wires": [
             [
                 "7969679a.afc398"
@@ -1006,8 +765,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 640,
+        "x": 540,
+        "y": 760,
         "wires": [
             [
                 "692e7cc3.d02234"
@@ -1033,8 +792,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 680,
+        "x": 540,
+        "y": 800,
         "wires": [
             [
                 "692e7cc3.d02234"
@@ -1120,31 +879,6 @@
         ]
     },
     {
-        "id": "b85b8c1a.26bff",
-        "type": "exec",
-        "z": "74e34207.b386cc",
-        "command": "python3 /home/pi/sensorHAT/breathing_led_sensorHAT.py -LED 27 -start 0 -step 5 ",
-        "addpay": true,
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "oldrc": false,
-        "name": "",
-        "x": 950,
-        "y": 420,
-        "wires": [
-            [
-                "20198a66.e57e26"
-            ],
-            [
-                "20198a66.e57e26"
-            ],
-            [
-                "20198a66.e57e26"
-            ]
-        ]
-    },
-    {
         "id": "bfe34a3d.a80158",
         "type": "template",
         "z": "74e34207.b386cc",
@@ -1153,13 +887,15 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "-stop {{flow.LED_n}}",
+        "template": "{{flow.LED_n}}",
         "output": "str",
-        "x": 470,
+        "x": 380,
         "y": 420,
         "wires": [
             [
-                "b85b8c1a.26bff"
+                "04dab7a5caf41073",
+                "7f94b52abe928e92",
+                "71534fa41d0faa66"
             ]
         ]
     },
@@ -1183,30 +919,11 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 230,
-        "y": 480,
+        "y": 520,
         "wires": [
             [
                 "b0e0b6e3.acbbf8"
             ]
-        ]
-    },
-    {
-        "id": "a3fbfefd.b67d7",
-        "type": "exec",
-        "z": "74e34207.b386cc",
-        "command": "python3 /home/pi/sensorHAT/breathing_led_sensorHAT.py -LED 17 -start 0 -step 5 ",
-        "addpay": true,
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "oldrc": false,
-        "name": "",
-        "x": 950,
-        "y": 480,
-        "wires": [
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1218,31 +935,16 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "-stop {{flow.LED_n}}",
+        "template": "{{flow.LED_n}}",
         "output": "str",
-        "x": 470,
-        "y": 480,
+        "x": 380,
+        "y": 520,
         "wires": [
             [
-                "a3fbfefd.b67d7"
+                "9373af2ffcfc1101",
+                "b1fe24c7d09ec6c3"
             ]
         ]
-    },
-    {
-        "id": "20198a66.e57e26",
-        "type": "debug",
-        "z": "74e34207.b386cc",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1350,
-        "y": 460,
-        "wires": []
     },
     {
         "id": "b3cbfc46.b1456",
@@ -1254,8 +956,8 @@
         "debounce": "25",
         "read": true,
         "bcm": true,
-        "x": 200,
-        "y": 780,
+        "x": 220,
+        "y": 900,
         "wires": [
             [
                 "a3ce3a60.943cc8"
@@ -1284,8 +986,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 780,
+        "x": 370,
+        "y": 900,
         "wires": [
             [
                 "a00a8760.7e8848"
@@ -1314,8 +1016,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 760,
+        "x": 540,
+        "y": 880,
         "wires": [
             [
                 "781e1168.d2b17",
@@ -1342,8 +1044,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 800,
+        "x": 540,
+        "y": 920,
         "wires": [
             [
                 "781e1168.d2b17",
@@ -1357,8 +1059,8 @@
         "z": "74e34207.b386cc",
         "name": "cds",
         "info": "",
-        "x": 170,
-        "y": 740,
+        "x": 190,
+        "y": 860,
         "wires": []
     },
     {
@@ -1373,8 +1075,8 @@
         "label": "明暗センサー",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 740,
-        "y": 780,
+        "x": 760,
+        "y": 900,
         "wires": []
     },
     {
@@ -1383,8 +1085,8 @@
         "z": "74e34207.b386cc",
         "name": "SW",
         "info": "",
-        "x": 170,
-        "y": 520,
+        "x": 150,
+        "y": 640,
         "wires": []
     },
     {
@@ -1409,8 +1111,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 820,
+        "x": 810,
+        "y": 940,
         "wires": []
     },
     {
@@ -1423,8 +1125,8 @@
         "debounce": "25",
         "read": true,
         "bcm": true,
-        "x": 200,
-        "y": 880,
+        "x": 220,
+        "y": 1000,
         "wires": [
             [
                 "5001298f.a83fa8"
@@ -1453,8 +1155,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 880,
+        "x": 370,
+        "y": 1000,
         "wires": [
             [
                 "e21494f5.624958"
@@ -1483,8 +1185,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 860,
+        "x": 540,
+        "y": 980,
         "wires": [
             [
                 "6e93b2c9.5fd13c",
@@ -1511,8 +1213,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 900,
+        "x": 540,
+        "y": 1020,
         "wires": [
             [
                 "6e93b2c9.5fd13c",
@@ -1526,8 +1228,8 @@
         "z": "74e34207.b386cc",
         "name": "傾きセンサー",
         "info": "",
-        "x": 190,
-        "y": 840,
+        "x": 210,
+        "y": 960,
         "wires": []
     },
     {
@@ -1542,8 +1244,8 @@
         "label": "傾きセンサー",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 740,
-        "y": 880,
+        "x": 760,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1558,9 +1260,235 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 920,
+        "x": 810,
+        "y": 1040,
         "wires": []
+    },
+    {
+        "id": "be68d298e4300afa",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "rm -f /home/pi/sensorHAT/LED_1_on.txt",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0b34c673913db4e0",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "rm -f /home/pi/sensorHAT/LED_2_on.txt",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6d59827aa2146c71",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "touch /home/pi/sensorHAT/LED_1_on.txt",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "512ac5c7d91359fd",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "touch /home/pi/sensorHAT/LED_2_on.txt",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "04dab7a5caf41073",
+        "type": "debug",
+        "z": "74e34207.b386cc",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1c396a4b179e6c5c",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "/bin/sh -c 'printf \"%s\" \"$1\" > /home/pi/sensorHAT/LED_1_bres.txt' _",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 440,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fd78c5fadff99d17",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "/bin/sh -c 'printf \"%s\" \"$1\" > /home/pi/sensorHAT/LED_2_bres.txt' _",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 560,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7f94b52abe928e92",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "/bin/sh -c 'printf \"%s\" \"$1\" > /home/pi/sensorHAT/LED_1_bres_n.txt' _",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 380,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9373af2ffcfc1101",
+        "type": "exec",
+        "z": "74e34207.b386cc",
+        "command": "/bin/sh -c 'printf \"%s\" \"$1\" > /home/pi/sensorHAT/LED_2_bres_n.txt' _",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 870,
+        "y": 500,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "71534fa41d0faa66",
+        "type": "delay",
+        "z": "74e34207.b386cc",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "1c396a4b179e6c5c"
+            ]
+        ]
+    },
+    {
+        "id": "b1fe24c7d09ec6c3",
+        "type": "delay",
+        "z": "74e34207.b386cc",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "fd78c5fadff99d17"
+            ]
+        ]
     },
     {
         "id": "dfb9c82a.0749a8",
@@ -1638,7 +1566,7 @@
         "type": "debug",
         "z": "d96c2049.36e13",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1654,7 +1582,7 @@
         "type": "debug",
         "z": "d96c2049.36e13",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1716,7 +1644,7 @@
         "type": "debug",
         "z": "d96c2049.36e13",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3217,8 +3145,8 @@
         "z": "dbdf4cec.c5115",
         "name": "周期的にファイルからデータを読み込む",
         "info": "",
-        "x": 320,
-        "y": 300,
+        "x": 260,
+        "y": 320,
         "wires": []
     },
     {
@@ -3246,7 +3174,7 @@
         "type": "mqtt out",
         "z": "dbdf4cec.c5115",
         "name": "",
-        "topic": "testmqtt/sensor/temp991",
+        "topic": "testmqtt/sensor/temp998",
         "qos": "0",
         "retain": "",
         "respTopic": "",
@@ -3483,7 +3411,7 @@
         "z": "dbdf4cec.c5115",
         "name": "データ欠損時にデータを0にする",
         "info": "",
-        "x": 350,
+        "x": 390,
         "y": 500,
         "wires": []
     },
@@ -3718,6 +3646,37 @@
         "wires": []
     },
     {
+        "id": "a85214340d476b4f",
+        "type": "inject",
+        "z": "dbdf4cec.c5115",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "770f5043.b9368",
+                "5e7dcf55.309b4",
+                "73c539fe.928c88"
+            ]
+        ]
+    },
+    {
         "id": "dfec41d4.dc045",
         "type": "ui_text",
         "z": "be8e813.ab22c8",
@@ -3774,7 +3733,7 @@
         "type": "debug",
         "z": "be8e813.ab22c8",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3847,7 +3806,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "3600",
+        "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "10",
@@ -3871,5 +3830,17 @@
         "x": 320,
         "y": 420,
         "wires": []
+    },
+    {
+        "id": "8ae6ba734209f0de",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-pi-gpio": "2.0.7",
+            "node-red-node-random": "0.4.1",
+            "node-red-node-smooth": "0.1.2",
+            "node-red-contrib-calc": "1.0.6"
+        }
     }
 ]
