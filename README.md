@@ -50,6 +50,7 @@ pythonだけで動作させたい場合は　cronの内容をpigpiod以外コメ
 2025/01/02 bookworm以降での使用では https://github.com/momorara/MultiSensorPi3_V5 を参照ください。<br>
 2025/01/16 bullseye 11.11 , Node-RED v4.0.8 , Node.js v20.18.1で動作確認、資料を整理しました。<br>
 2026/11/20 bookworm 12.11 , Node-RED v4.0.8 , Node.js v20.18.1で動作確認、資料を整理しました。<br>
+システムやNode-REDが重くなってきたので、ラズパイZero2W,3B以降を推奨します。
 
  <br>
 <h4><<ライセンス>></h4>
