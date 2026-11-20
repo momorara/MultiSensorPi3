@@ -1,6 +1,6 @@
 # MultiSensorPi3
 
-本プログラムはラズパイ4B以下でBullseye11.11までを対象としています。<br>
+本プログラムはラズパイ4B以下でBBookworm12.15までを対象としています。<br>
 bookworm以降のOS、ラズパイ5については<br>
 https://github.com/momorara/MultiSensorPi3_V5<br>
 を参照ください。
@@ -32,7 +32,7 @@ git clone https://github.com/momorara/MultiSensorPi3 sensorHAT<br>
 <h4><<使用説明資料>></h4>
 説明書類の中の資料を確認ください。
 お問い合わせに関しては、サポート.txtを参照ください。><br>
-pythonだけで動作させたい場合は　https://github.com/momorara/MultiSensorPi3_V5　を参照ください。<br>
+pythonだけで動作させたい場合は　cronの内容をpigpiod以外コメントアウトしてください。<br>
 
 <h4><<注意事項>></h4>
 センサーの取り付け方法 SR04とAHT30の接続方向を確実に確認してください。<br>
@@ -49,6 +49,7 @@ pythonだけで動作させたい場合は　https://github.com/momorara/MultiSe
 2024/10/15 bullseye 11.11 , Node-RED v4.0.5 , Node.js v20.18.0で動作確認しました。(on update)<br>
 2025/01/02 bookworm以降での使用では https://github.com/momorara/MultiSensorPi3_V5 を参照ください。<br>
 2025/01/16 bullseye 11.11 , Node-RED v4.0.8 , Node.js v20.18.1で動作確認、資料を整理しました。<br>
+2026/11/20 bookworm 12.11 , Node-RED v4.0.8 , Node.js v20.18.1で動作確認、資料を整理しました。<br>
 
  <br>
 <h4><<ライセンス>></h4>
@@ -69,7 +70,8 @@ Released under the MIT license です。
 　AHTおよびSR04関係でエラーが出ている場合、現在のプログラムに入れ替えてください。<br>
 2024/2/10 インストール文書を更新しました。<br>
 2024/5/17　取扱説明書を更新しました。<br>
-
+2026/11/20 プログラム全体を見直しました、使い方は同じです。
+ 
 <h4><<サポート窓口>></h4>
   メールアドレスが　tkj-works@mbr.nifty.com に変更になっています。<br>
   資料等を修正中ですが、ご注意ください。<br>
