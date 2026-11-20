@@ -30,7 +30,10 @@ class SensorAHTx0:
         """
         Resets and prepares the sensor for operation.
         """
-        self.i2c_bus.write_i2c_block_data(self.device_address, self.CMD_RESET[0], [])
+        self.i2c_bus.write_byte(
+            self.device_address,
+            self.CMD_RESET[0]
+        )
         time.sleep(0.04)  # Allow time for reset
         self.i2c_bus.write_i2c_block_data(self.device_address, self.CMD_SETUP[0], self.CMD_SETUP[1:])
         time.sleep(0.01)  # Allow time for initialization
