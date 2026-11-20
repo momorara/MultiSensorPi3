@@ -5,7 +5,7 @@
 
 @reboot sudo pigpiod
 
-@reboot python3 /home/pi/sensorHAT/irrp_data_code05.py   >irrp_data_code05_log.txt 2>&1
+@reboot sleep 20 && python3 /home/pi/sensorHAT/irrp_data_code05.py   >irrp_data_code05_log.txt 2>&1
 
 @reboot python3 /home/pi/sensorHAT/LED_on_off.py   >LED_on_off_log.txt 2>&1
 
