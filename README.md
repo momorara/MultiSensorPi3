@@ -1,6 +1,6 @@
 # MultiSensorPi3
 
-本プログラムはラズパイ4B以下でBBookworm12.15までを対象としています。<br>
+本プログラムはラズパイ4B以下でBookworm12.15までを対象としています。<br>
 bookworm以降のOS、ラズパイ5については<br>
 https://github.com/momorara/MultiSensorPi3_V5<br>
 を参照ください。
